@@ -1,0 +1,25 @@
+@mixin overflowText($line: 1) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: $line;
+  -webkit-box-orient: vertical;
+}
+
+@mixin textRegular($color, $size) {
+  font-weight: 400;
+  color: $color;
+  font-size: $size;
+}
+
+@mixin textMedium($color, $size) {
+  font-weight: 500;
+  color: $color;
+  font-size: $size;
+}
+
+@mixin textBold($color, $size) {
+  font-weight: 700;
+  color: $color;
+  font-size: $size;
+}
